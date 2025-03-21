@@ -31,6 +31,7 @@ const keyAssignmentSchema = new mongoose.Schema(
       },
       profile_image: { type: String, default: null }, // employee photo capture
     },
+    is_occupied: { type: Boolean, default: false, required: true },
     is_delete: { type: Boolean, default: false }, // deleted : 1, note delete: 0
   },
   { timestamps: { createdAt: "created_at", updatedAt: "updated_at" }, versionKey: false }
